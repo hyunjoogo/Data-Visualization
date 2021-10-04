@@ -1,5 +1,7 @@
 import React from "react";
-import {arc} from 'd3';
+import {Eyes} from "./Eyes";
+import {CircleBackground} from "./BackGroundCircle";
+import {Mouth} from "./Mouth";
 
 
 const centerX = 480;
@@ -11,37 +13,15 @@ const eyeRadius = 40;
 const mouthWidth = 20;
 const mouthRadius = 140;
 
-const mouthArc = arc()
-  .innerRadius(mouthRadius) // 안쪽 원 반지름
-  .outerRadius(mouthWidth + mouthRadius) // 바깥쪽 원 반지름
-  .startAngle(Math.PI / 2) // 시작점 각도
-  .endAngle(Math.PI * 3 / 2);
-
-const CircleBackground = ({radius}) => (
-  <circle
-    r={radius}
-    fill={"yellow"}
-    stroke={"black"}
-    strokeWidth={strokeWidth}
-  />
-);
-
 
 const Part1 = () => {
   return (
     <>
       <svg width="960" height="500">
         <g transform={`translate(${centerX},${centerY})`}>
-          <CircleBackground radius={centerY - strokeWidth / 2}/>
-          <circle cx={-eyeOffsetX}
-                  cy={-eyeOffsetY}
-                  r={eyeRadius}
-          />
-          <circle cx={eyeOffsetX}
-                  cy={-eyeOffsetY}
-                  r={eyeRadius}
-          />
-          <path d={mouthArc()}/>
+          <CircleBackground radius={centerY - strokeWidth / 2} strokeWidth={strokeWidth}/>
+          <Eyes eyeOffsetX={eyeOffsetX} eyeOffsetY={eyeOffsetY} eyeRadius={eyeRadius} />
+          <Mouth mouthRadius={mouthRadius} mouthWidth={mouthWidth}/>
         </g>
       </svg>
     </>
