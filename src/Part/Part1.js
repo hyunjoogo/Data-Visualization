@@ -1,30 +1,28 @@
 import React from "react";
-import {Eyes} from "./Eyes";
-import {CircleBackground} from "./BackGroundCircle";
-import {Mouth} from "./Mouth";
+import {Face} from "./Face";
+import {range} from 'd3';
 
+const width = 166;
+const height = 166;
 
-const centerX = 480;
-const centerY = 250;
-const strokeWidth = 20;
-const eyeOffsetX = 90;
-const eyeOffsetY = 100;
-const eyeRadius = 40;
-const mouthWidth = 20;
-const mouthRadius = 140;
+const arrayThis = range(50);
 
+console.log(Math.random())
 
-const Part1 = () => {
-  return (
-    <>
-      <svg width="960" height="500">
-        <g transform={`translate(${centerX},${centerY})`}>
-          <CircleBackground radius={centerY - strokeWidth / 2} strokeWidth={strokeWidth}/>
-          <Eyes eyeOffsetX={eyeOffsetX} eyeOffsetY={eyeOffsetY} eyeRadius={eyeRadius} />
-          <Mouth mouthRadius={mouthRadius} mouthWidth={mouthWidth}/>
-        </g>
-      </svg>
-    </>
-  )
-}
+const Part1 = () => arrayThis.map((index) => (
+  <Face
+    key={index}
+    width={width}
+    height={height}
+    centerX={width / 2}
+    centerY={height / 2}
+    strokeWidth={10}
+    eyeOffsetX={30}
+    eyeOffsetY={30}
+    eyeRadius={10}
+    // 난수를 추가해 각자다르게 만들 수 있음
+    mouthWidth={7 + Math.random() * 10}
+    mouthRadius={40}/>
+));
+
 export default Part1;
