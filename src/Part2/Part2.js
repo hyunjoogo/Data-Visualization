@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 
 
 const loadData = () => {
@@ -22,9 +22,27 @@ const loadData = () => {
 loadData();
 
 
+const width = 960;
+const height = 500;
+const circleX = width / 2;
+const circleY = height / 2;
+const circleRadius = 30;
+const initialMousePosition = {x: circleX, y: circleY};
+
 export const Part2 = () => {
+  const [mousePosition, setMousePosition] = useState(initialMousePosition);
+
+  const handleMouseMove = useCallback(event => {
+    const {clientX, clientY} = event;
+    setMousePosition({x: clientX, y: clientY})
+  }, []);
 
   return (
-    <h1>2</h1>
+    <svg width={width} height={height} onMouseMove={handleMouseMove}>
+      <circle cx={mousePosition.x}
+              cy={mousePosition.y}
+              r={circleRadius}
+      />
+    </svg>
   )
 }
