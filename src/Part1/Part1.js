@@ -7,8 +7,6 @@ const height = 166;
 
 const arrayThis = range(50);
 
-console.log(Math.random())
-
 const Part1 = () => arrayThis.map((index) => (
   <Face
     key={index}
