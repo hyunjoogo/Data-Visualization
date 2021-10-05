@@ -1,5 +1,6 @@
 import './App.css';
 import {Part2} from "./Part2/Part2";
+import Part1 from "./Part1/Part1";
 
 
 function App() {
