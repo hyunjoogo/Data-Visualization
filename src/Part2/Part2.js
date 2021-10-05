@@ -18,12 +18,20 @@ const message = data => {
 export const Part2 = () => {
   const [data, setData] = useState(null);
 
-useEffect(() => {
-  csv(CSVURL).then(setData)
-},[])
+  useEffect(() => {
+    csv(CSVURL).then(setData)
+  }, [])
 
+  if (!data) {
+    return <pre style={{fontSize: "7em"}}>Loading...</pre>
+  }
 
   return (
-    <pre style={{fontSize:"7em"}}>Data is {data ? message(data) : 'loading'}</pre>
+    <>
+      {data.map((value)=>{
+        return <div style={{backgroundColor: value['RGB hex value'], width:'960px', height:'3px'}}/>
+      })}
+    </>
+
   )
 }
