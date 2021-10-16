@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b1d7687-85c2-48a2-865b-29a2ea62b2b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Part3/AxisBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part3/AxisLeft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part3/Marks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part3/useData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part4/AxisBottom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part4/AxisLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part4/Marks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part4/Part4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part3/Part3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part3/Part3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part3/useData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part3/useData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1z3BIZQ6Vr6ZPzBm9MRqEGoE3BO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,7 +43,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Part4" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Part4" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,6 +64,12 @@
       <workItem from="1633749287389" duration="429000" />
       <workItem from="1633753274848" duration="3784000" />
       <workItem from="1633770526029" duration="4169000" />
+      <workItem from="1633802266520" duration="278000" />
+      <workItem from="1633871253221" duration="141000" />
+      <workItem from="1633874765354" duration="186000" />
+      <workItem from="1633950149628" duration="3246000" />
+      <workItem from="1634012556469" duration="1363000" />
+      <workItem from="1634371798354" duration="5032000" />
     </task>
     <servers />
   </component>
