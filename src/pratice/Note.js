@@ -3,6 +3,7 @@ import {json, geoMercator} from 'd3';
 import {feature} from 'topojson';
 
 const jsonUrl = 'https://unpkg.com/world-atlas@2.0.2/countries-50m.json';
+const koreaMap = './TL_SCCO_CTPRVN.json';
 
 const Note = () => {
   const width = 1000;
@@ -12,10 +13,11 @@ const Note = () => {
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidth = width - margin.left - margin.right;
 
+  const [data, setData] = useState(null);
+  console.log(data);
+
   useEffect(() => {
-    const koreaMap = '/public/TL_SCCO_CTPRVN.json';
-    json(koreaMap).then(console.log)
-    // const geojson = topojson.feature(koreaMap, koreaMap.objects.skorea_provinces_2018_geo);
+    json(koreaMap).then(setData)
   }, [])
 
 

@@ -33,8 +33,12 @@ pre {
     fill: red;
 }
 
-.mark {
+.marks {
     fill: #137B80;
+}
+
+.marks path{
+    stroke: #de6a6c;
 }
 
 .axis-label {
