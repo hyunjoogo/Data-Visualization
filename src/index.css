@@ -25,6 +25,14 @@ pre {
     fill: #635F5D;
 }
 
+.tick2 line {
+    stroke: red;
+}
+
+.tick2 text {
+    fill: red;
+}
+
 .mark {
     fill: #137B80;
 }
