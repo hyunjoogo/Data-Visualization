@@ -9,6 +9,7 @@ import DetailMap from "./koreadetailmap/DetailMap";
 import Part6 from "./Part6/Part6";
 import Note from "./pratice/Note";
 import Part7 from "./Part7/Part7";
+import Chart from "./Chart/Chart";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {/*<Part5 />*/}
       {/*<Part6 />*/}
       <Part7 />
+      {/*<Chart width={1000} height={500} />*/}
       {/*<DetailMap/>*/}
       {/*<KoreaMap/>*/}
     </div>
